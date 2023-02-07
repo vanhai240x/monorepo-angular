@@ -1,0 +1,17 @@
+<div class="layout" [class.collapse]="sidenavComp.isCollapseSidebar">
+  <admin-portal-side-nav #sidenavComp (emitSidebar)="getSidebar($event)" class="side-nav"></admin-portal-side-nav>
+  <div class="side-content">
+    <admin-portal-default-header
+      #headerComp
+      (emitSidebar)="getSidebar($event)"
+      class="header"
+    ></admin-portal-default-header>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<div id="loading-page" style="display: none">
+  <mat-spinner></mat-spinner>
+</div>

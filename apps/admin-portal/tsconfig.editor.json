@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/**/*.ts", "../../libs/share-service/src/lib/crud-base.service.ts", "../../libs/share-service/src/lib/file-upload.service.ts", "../../libs/share-service/src/lib/authentication.guard.ts"],
+  "compilerOptions": {
+    "types": ["jest", "node"]
+  }
+}
