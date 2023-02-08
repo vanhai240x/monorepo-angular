@@ -33,7 +33,7 @@ export class DefaultHeaderComponent implements OnInit {
         this.breadcrums = [
           {
             name: 'Trang chủ',
-            url: `/${ROUTERS.ADMIN.BASE}`,
+            url: `/${ROUTERS.BASE}`,
           },
         ];
         this.navItems.forEach((nav: any) => {

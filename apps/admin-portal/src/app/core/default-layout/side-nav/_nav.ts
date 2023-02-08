@@ -3,67 +3,75 @@ import { ROUTERS } from "@dkaccess/share-utils";
 
 export const navItems = [
   {
-    name: 'Sản phẩm',
-    url: ROUTERS.ADMIN.PRODUCT,
+    name: 'Home',
+    url: ROUTERS.HOME,
     icon: 'assets/img/svg/icon-nav-01.svg',
     attributes: {
       permissions: [PERMISSION_CODE.PRODUCT.VIEW_PRODUCT],
     },
   },
   {
-    name: 'Dự án',
-    url: ROUTERS.ADMIN.PROJECT,
+    name: 'Org Chart',
+    url: ROUTERS.ORG_CHART,
     icon: 'assets/img/svg/icon-nav-02.svg',
     attributes: {
-      permissions: [PERMISSION_CODE.PROJECT.VIEW_PROJECT],
+      permissions: [PERMISSION_CODE.PRODUCT.VIEW_PRODUCT],
     },
   },
   {
-    name: 'Đã mua',
-    url: ROUTERS.ADMIN.BOUGHT,
-    icon: 'assets/img/svg/icon-nav-bought.svg',
-    attributes: {
-      permissions: [PERMISSION_CODE.PROJECT.VIEW_PROJECT],
-    },
-  },
-  {
-    name: 'Tin tức',
-    url: ROUTERS.ADMIN.NEWS,
-    icon: 'assets/img/svg/icon-nav-news.svg',
-    attributes: {
-      permissions: [PERMISSION_CODE.SYSTEM.FULL_CONTROL],
-    },
-  },
-  {
-    name: 'Tài khoản',
-    url: ROUTERS.ADMIN.ACCOUNTS,
+    name: 'Sản phẩm',
+    url: ROUTERS.PRODUCT,
     icon: 'assets/img/svg/icon-nav-03.svg',
     attributes: {
-      permissions: [PERMISSION_CODE.ACCOUNT.VIEW_ACCOUNT],
+      permissions: [PERMISSION_CODE.PRODUCT.VIEW_PRODUCT],
     },
   },
   {
-    name: 'Phân quyền',
-    url: ROUTERS.ADMIN.ROLES,
+    name: 'Dự án',
+    url: ROUTERS.PROJECT,
     icon: 'assets/img/svg/icon-nav-04.svg',
     attributes: {
-      permissions: [PERMISSION_CODE.SYSTEM.FULL_CONTROL],
+      permissions: [PERMISSION_CODE.PROJECT.VIEW_PROJECT],
     },
   },
   // {
-  //   name: 'Thông báo',
-  //   url: ROUTERS.ADMIN.NOTIFY,
-  //   icon: 'assets/img/svg/icon-nav-05.svg',
+  //   name: 'Đã mua',
+  //   url: ROUTERS.BOUGHT,
+  //   icon: 'assets/img/svg/icon-nav-bought.svg',
+  //   attributes: {
+  //     permissions: [PERMISSION_CODE.PROJECT.VIEW_PROJECT],
+  //   },
+  // },
+  // {
+  //   name: 'Tin tức',
+  //   url: ROUTERS.NEWS,
+  //   icon: 'assets/img/svg/icon-nav-news.svg',
   //   attributes: {
   //     permissions: [PERMISSION_CODE.SYSTEM.FULL_CONTROL],
   //   },
   // },
-  {
-    name: 'Cấu hình',
-    url: ROUTERS.ADMIN.CONFIG,
-    icon: 'assets/img/svg/icon-nav-06.svg',
-    attributes: {
-      permissions: [PERMISSION_CODE.SYSTEM.FULL_CONTROL],
-    },
-  },
+  // {
+  //   name: 'Tài khoản',
+  //   url: ROUTERS.ACCOUNTS,
+  //   icon: 'assets/img/svg/icon-nav-03.svg',
+  //   attributes: {
+  //     permissions: [PERMISSION_CODE.ACCOUNT.VIEW_ACCOUNT],
+  //   },
+  // },
+  // {
+  //   name: 'Phân quyền',
+  //   url: ROUTERS.ROLES,
+  //   icon: 'assets/img/svg/icon-nav-04.svg',
+  //   attributes: {
+  //     permissions: [PERMISSION_CODE.SYSTEM.FULL_CONTROL],
+  //   },
+  // },
+  // {
+  //   name: 'Cấu hình',
+  //   url: ROUTERS.CONFIG,
+  //   icon: 'assets/img/svg/icon-nav-06.svg',
+  //   attributes: {
+  //     permissions: [PERMISSION_CODE.SYSTEM.FULL_CONTROL],
+  //   },
+  // },
 ];

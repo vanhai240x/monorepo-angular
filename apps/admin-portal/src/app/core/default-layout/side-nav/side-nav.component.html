@@ -21,6 +21,7 @@
         <a
           routerLinkActive="active"
           [routerLink]="item.url"
+          [routerLinkActiveOptions]="{exact: true}"
           [matTooltip]="isCollapseSidebar ? item.name : ''"
           matTooltipPosition="right"
         >

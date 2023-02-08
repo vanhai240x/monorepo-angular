@@ -1,0 +1,31 @@
+<angular-org-chart
+  [nodeTemplate]="nodeTemplate"
+  [data]="tree"
+  #exampleChart="orgChart"
+>
+  <!-- OPTIONAL: zoom button with an ugly png -->
+  <button mat-icon-button zoom-button (click)="toggleZoom(exampleChart)">
+    <mat-icon>{{ isToggleZoom ? 'zoom_in_map' : 'zoom_out_map' }}</mat-icon>
+  </button>
+</angular-org-chart>
+
+<!-- Node Template -->
+<ng-template #nodeTemplate let-node>
+  <div class="chart-node">
+    <div class="left">
+      <div class="name">{{ node?.name }}</div>
+      <div class="description">{{ node?.description }}</div>
+    </div>
+    <div class="right">
+      <img class="avatar" [src]="node?.image" />
+    </div>
+    <!-- An ugly button to fold/unfold -->
+    <div
+      *ngIf="node.children.length"
+      (click)="node.hideChildren = !node.hideChildren"
+      class="tree-fold-btn"
+    >
+      {{ node.hideChildren ? '+' : '-' }}
+    </div>
+  </div>
+</ng-template>

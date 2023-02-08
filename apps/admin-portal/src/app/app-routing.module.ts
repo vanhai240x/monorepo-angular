@@ -36,7 +36,7 @@ export const routes: Routes = [
     path: '',
     component: DefaultLayoutComponent,
     canActivate: [AuthenticationGuard],
-    loadChildren: () => import('./views/user/user.module').then((m) => m.UserModule),
+    loadChildren: () => import('./views/user.module').then((m) => m.UserModule),
   },
   { path: '**', component: PageNotFoundComponent },
 ];
